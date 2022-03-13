@@ -155,7 +155,7 @@ export default SimplePropsHoc;
 
 如下图
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/higher-order-components/master/images/0.png" /> <br />
+<img src="https://kongzhi0707.github.io/higher-order-components/images/0.png" /> <br />
 
 下载项目后，运行 http://localhost:8083/props 可以看到效果。
 
@@ -213,7 +213,7 @@ export default class SimpleState extends Component {
 ```
 如上代码，当我们在输入框输入1的时候，会在控制台打印如下信息：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/higher-order-components/master/images/1.png" /> <br />
+<img src="https://kongzhi0707.github.io/higher-order-components/images/1.png" /> <br />
 
 如上代码，通过props，回调函数 传递给 WrappedComponent组件，通过回调函数获取state，SimpleState.jsx 代码中input就是受控的，当改变value的时候，用onChange事件同步到 state 中。用到最多的地方就是form表单中的受控组件。
 
@@ -325,7 +325,7 @@ export default OperateRefs;
 ```
 如上index.js中的代码，通过高阶组件包装后的 EnhanceRefs 组件可以访问到 SimpleRefs 组件的 input元素。初始化效果如下：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/higher-order-components/master/images/2.png" /> <br />
+<img src="https://kongzhi0707.github.io/higher-order-components/images/2.png" /> <br />
 
 如上 index.js 代码，渲染包装后的高阶组件 EnhanceRefs，传递二个参数 name 和 age，然后调用父组件 SimpleRefsHoc 方法inputRef给子组件 SimpleRefs，
 然后在子组件 SimpleRefs 中以input元素作为参数传递给父组件的方法中 this.props.inputRef(input); 父组件 SimpleRefsHoc中以inputElement变量保存在
@@ -410,7 +410,7 @@ export default SimpleLifeHoc;
 ```
 执行效果如下：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/higher-order-components/master/images/3.png" /> <br />
+<img src="https://kongzhi0707.github.io/higher-order-components/images/3.png" /> <br />
 
 如上代码，在SimpleLifeHoc组件中，对传入的WrappedComponent组件，也就是原组件 SimpleLife.jsx，然后对原组件的生命周期 的 prototype 中的生命周期 componentDidMount 进行劫持。
 
@@ -458,7 +458,7 @@ export default SimpleEventHoc;
 ```
 点击 "组件内部点击事件" 后，效果如下：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/higher-order-components/master/images/3.png" /> <br />
+<img src="https://kongzhi0707.github.io/higher-order-components/images/4.png" /> <br />
 
 下载项目后，运行 http://localhost:8083/event 可以看到效果。
 
@@ -586,7 +586,7 @@ export default ReverseStateHoc;
 ```
 执行结果如下：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/higher-order-components/master/images/5.png" /> <br />
+<img src="https://kongzhi0707.github.io/higher-order-components/images/5.png" /> <br />
 
 下载项目后，运行 http://localhost:8083/reverse 可以看到效果。
 
@@ -686,7 +686,7 @@ export default RenderTreeHoc;
 ```
 实现效果如下所示：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/higher-order-components/master/images/6.png" /> <br />
+<img src="https://kongzhi0707.github.io/higher-order-components/images/6.png" /> <br />
 
 下载项目后，运行 http://localhost:8083/rendertree 可以看到效果。
 
